@@ -1,0 +1,40 @@
+body {
+    background-image: url('https://freefrontend.com/assets/img/css-background-patterns/css-lattice-pattern.png');
+    background-size: auto;
+    font-family: Arial;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: #070d13;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: #c6d9eb;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: #c6d9eb;
+    text-align: center;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+    font-size: 1rem;
+  }
