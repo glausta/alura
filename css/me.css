@@ -1,0 +1,107 @@
+
+body {
+    height: 800px;
+    font-family: 'Dancing Script', cursive, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+	  background-image: url(../img/butterflies.png);
+	  background-repeat: no-repeat;
+    background-position: absolute;
+    background-position-x: 70px;
+    background-position-y: 150px;
+}
+
+
+
+.skillcrush {
+  margin: 15px;
+  padding: 100px;
+  position: fixed;
+  top: 80px;
+  left: 0;
+}
+
+.skillcrushproject {
+  width: 200px;
+  padding: 10px;
+  position: fixed;
+  top: 230px;
+  left: 70px;
+  font-size: 20px;
+  color: grey;
+}
+
+.codeacademy {
+  margin: 15px;
+  padding: 100px;
+  position: fixed;
+  top: 0;
+  left: 330px;
+}
+
+.freecodecamp {
+  margin: 15px;
+  padding: 100px 50px;
+  position: fixed;
+  top: 80px;
+  left: 700px;
+}
+
+.frontendmasters {
+  margin: 15px;
+  padding: 70px;
+  position: fixed;
+  top: 350px;
+  left: 0;
+  text-align: center;
+}
+
+.codepen {
+  margin: 15px;
+  padding: 70px;
+  position: fixed;
+  top: 550px;
+  left: 390px;
+}
+
+.alura {
+  margin: 15px;
+  padding: 70px;
+  position: fixed;
+  top: 350px;
+  left: 750px;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  padding: 70px;
+  position: fixed;
+  top: 650px;
+  left: 370px;
+  color: grey;
+  font-size: 1.5rem;
+}
+
+
+
+footer p {
+    font-size: 0.65rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    margin: 0 32%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-size: 0.75rem;
+}
