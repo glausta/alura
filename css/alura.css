@@ -1,12 +1,40 @@
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* esse asterisco acima serve para resetar qualquer valor que o browser inclui automaticamente de margin e padding */
+
+
 body {
     background-image: url('https://freefrontend.com/assets/img/css-background-patterns/css-lattice-pattern.png');
-    background-size: auto;
-    font-family: Arial;
+    background-size: auto 100vh;
+    font-family: 'Josefin Sans', sans-serif;
     height: 100vh;
+    color: #c6d9eb;
+  }
+
+  /* se a tela tiver pelo menos 400px vai carregar estes estilos dentro do @media */
+  @media (min-width: 400px) {
+    body {
+      font-size: 1.2em;
+    }
   }
   
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .menu {
     background-color: #070d13;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
   .menu ul{
@@ -18,23 +46,207 @@ body {
     list-style: none;
   }
   
+  .menu a {
+    display: block;
+    padding: 20px 20px;
+    transition: 1s;
+  }
+
+  .menu a:hover {
+    text-shadow: 0 0 15px whitesmoke;
+  }
   
   a {
     text-decoration: none;
     color: #c6d9eb;
+    font-family: 'Josefin Sans', sans-serif;
   }
   
   a:hover {
     text-decoration: underline;
   }
   
+.title {
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+  animation: ease-out 2s animacaoTitulo forwards;
+}
+      @keyframes animacaoTitulo {
+        from {
+          transform: scale(0.2) translateY(0vh);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1) translateY(0);
+          opacity: 1; 
+        }
+      }
+
   .site-subtitle,
   .site-title {
     color: #c6d9eb;
     text-align: center;
   }
+
+  .site-title {
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+  }
   
   .site-subtitle {
     font-style: italic;
     font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
   }
+
+  .sobre, 
+  .portifolio, 
+  .contato {
+    padding: 2em;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+.sobre p {
+  text-align: justify;
+  margin: 0rem auto;
+  padding: 10px;
+}
+@media (min-width: 560px) {
+  .sobre p {
+    width: 500px;
+  }
+}
+
+.text {
+  margin: auto;
+  width: 550px;
+  background-color: #070d13b6;
+  padding: 10px;
+  border-radius: 5px;
+}
+.text a {
+  text-decoration: underline;
+}
+
+
+.p-smaller {
+  font-size: 0.9em;
+}
+
+
+.sobre h2 {
+  margin-bottom: 0.7em;
+  padding-top: 2em;
+  margin-top: 2em;
+}
+
+.avatar {
+  float: inline-start;
+  margin-bottom: 10px;
+  
+}
+
+.sobre img {
+  border-radius: 50%;
+  border: 10px solid #070d1383;
+  width: 10em;
+}
+
+.portifolio h2, .contato h2 {
+  padding: 2em;
+  margin-top: 2em;
+}  
+
+.portifolio .grid {
+  display: grid;
+  gap: 2em;
+  justify-content: center;
+}
+
+/* No .grid acima, criamos o grid... nos @medias abaixo, criamos quantas colunas aparecerão de acordo com a largura que arrastamos a pagina */
+
+@media (min-width: 560px) {
+  .grid {
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 240px 240px;
+  }
+}
+
+/* se quiser colocar 3 colunas quando a tela aumentar. ex:
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: 240px 240px 240px;
+  }
+}
+*/
+
+  /* para caber a foto dentro do espaço determinado sem deformar = object-fit:cover */
+  .img-portfolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    transition: 2s;
+  }
+
+  /*
+  .img-portfolio:hover {
+    transform: scale(1.1) rotate(-2deg);
+  }
+*/
+
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+}
+
+.flip-card {
+  height:180px;
+  perspective: 1000px;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  width: 100%;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ivory;
+  height: 180px;
+  width: 240px;
+  transform: rotateY(180deg);
+}
+
+
+
+
+  .fab {
+    font-size: 4em;
+    padding: 0.5em;
+  }
+
+  a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 15px rgb(223, 223, 223, .5);
+  }
+
+
+.imersaocss {
+  display: block;
+  text-align: ;
+  margin-bottom: 100px;
+  padding: 20px;
+  color: rgb(186, 201, 250);
+}

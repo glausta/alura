@@ -1,24 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <!-- Essa tag meta aqui em baixo é a tag que torna o site responsivo aos modelos de tela celular/PC -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Glau Costa</title>
     <link rel="stylesheet" href="css/alura.css">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d85a09fde.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
     <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portifólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
+      <nav class="menu">
+        <ul>
+          <li><a href="#sobre">About</a></li>
+          <li><a href="#portifolio">Portfolio</a></li>
+          <li><a href="#contato">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="title">
         <h1 class="site-title">Glau Costa</h1>
         <h2 class="site-subtitle">Jr. FrontEnd Developer</h2>
-      </header>
-      
-      
-</body>
+      </div>
+    </header>
+
+    <section class="sobre" id="sobre">
+
+      <h2>About</h2>
+
+      <figure class="avatar">
+        <img src="https://avatars2.githubusercontent.com/u/29214122?v=3" alt="My picture.">
+      </figure>
+      <div class="text">
+        <p>I've made my home base in Astoria, New York. My journey into tech started in 1998 when I begun using the internet to communicate with a small group of friends who knew a lot about tech. Since then, I have been learning a lot.</p>
+
+        <p>I have always loved technology and arts and I studied marketing because I wanted to create beautiful adds with a mixture of art, technical information, technology and of course customization! Which makes me think it is also a great combination for building websites!</p>
+
+        <p class="p-smaller">This site was built during the Brazilian online course: <a href="https://www.alura.com.br/imersao-css" target="_blank">'CSS Immersion of Alura'.</a> Thank You! ❤️</p>
+        <p class="p-smaller"><em>Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css" target="_blank"> 'Imersão CSS da Alura'.</a> Obrigada! ❤️</em></p>
+      </div>  
+    </section>
+
+    <section class="portifolio" id="portifolio">
+      <h2>Portfolio</h2>
+
+      <div class="grid">
+
+        <div class="flip-card">
+          <div class="card">  
+		        <figure class="card-front">
+			        <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+			        <figcaption>eCommerce</figcaption>
+            </figure>
+        
+            <div class="card-back">
+              oi
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card"> 
+		        <figure class="card-front">
+			        <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+			        <figcaption>Mobile</figcaption>
+            </figure>
+            <div class="card-back">
+              oi
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+			        <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+			        <figcaption>Web design</figcaption>
+            </figure>
+            <div class="card-back">
+              oi
+            </div>
+    
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+			        <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
+			        <figcaption>Projects</figcaption>
+            </figure>
+            <div class="card-back">
+              oi
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <h2>Contact</h2>
+
+      <div class="icons">
+        <a target="_blank" href="https://github.com/glausaes">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/glausaes">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://linkedin.com/glausaes">
+        <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://instagram.com/glausaes">
+        <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <a href="mailto:info@glauciacosta.com">info@glauciacosta.com</a>
+      <a class="imersaocss" target="_blank" href="https://www.alura.com.br/imersao-css"> #imersaoCSS </a>
+    </section>
+   
+  </body>
 </html>
