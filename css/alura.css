@@ -227,26 +227,36 @@ body {
   height: 180px;
   width: 240px;
   transform: rotateY(180deg);
+  padding: 10px;
+  color: grey;
 }
 
 
 
 
-  .fab {
-    font-size: 4em;
-    padding: 0.5em;
-  }
+.fab {
+  font-size: 4em;
+  padding: 0.5em;
+}
 
-  a:hover {
-    text-decoration: none;
-    text-shadow: 0px 0px 15px rgb(223, 223, 223, .5);
-  }
+a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 20px rgb(223, 223, 223, .5);
+}
 
 
 .imersaocss {
-  display: block;
-  text-align: ;
-  margin-bottom: 100px;
+  font-size: larger;
+  margin-bottom: 40px;
   padding: 20px;
-  color: rgb(186, 201, 250);
+  color: #c6d9eb;
+}
+
+.imersaocss a:hover {
+  color: #d43e3e;
+}
+
+.return { 
+  font-size: 3em;
+  float: right;
 }
