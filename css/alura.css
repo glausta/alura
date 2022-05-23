@@ -136,8 +136,8 @@ body {
 
 .sobre h2 {
   margin-bottom: 0.7em;
-  padding-top: 2em;
-  margin-top: 2em;
+  padding-top: 1em;
+  margin-top: 1em;
 }
 
 .avatar {
@@ -153,8 +153,8 @@ body {
 }
 
 .portifolio h2, .contato h2 {
-  padding: 2em;
-  margin-top: 2em;
+  padding: 1em;
+  margin-top: 1em;
 }  
 
 .portifolio .grid {
