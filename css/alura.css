@@ -142,6 +142,7 @@ body {
 
 .avatar {
   float: inline-start;
+  margin-left: 10px;
   margin-bottom: 10px;
   
 }
